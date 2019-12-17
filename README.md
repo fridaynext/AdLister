@@ -22,3 +22,14 @@ username | password
 --- | ---
 casey | dontcrackmeplease
 
+## Screenshots
+
+![home page](https://github.com/fridaynext/AdLister/screenshots/01screenshot)
+
+![login page](https://github.com/fridaynext/AdLister/screenshots/02screenshot)
+
+![listings page](https://github.com/fridaynext/AdLister/screenshots/03screenshot)
+
+![add listing page](https://github.com/fridaynext/AdLister/screenshots/04screenshot)
+
+![logout success](https://github.com/fridaynext/AdLister/screenshots/05screenshot)
