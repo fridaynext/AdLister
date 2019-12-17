@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" 
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" 
+layout:decorate="~{layout}">
+  <head>
+    <title>AdLister Classifieds - Listings</title>
+  </head>
+  <body>
+  <div layout:fragment="content">
+  	<div class="container main-content">
+	    <div class="row">
+	    	<div class="col-7">
+	    		<h1>Current Listings</h1>
+	    	</div>
+	    	<div class="col">
+	    		<a th:href="@{/listings/add}">Add New Listing</a>
+	    	</div>
+	    </div>
+		<table id="table" class="table table-striped table-sm">
+			<thead>
+				<th scope="col">Cost</th>
+				<th scope="col">Title</th>
+				<th scope="col">Contact Email</th>
+			</thead>
+			<tbody>
+				<tr th:each="adListing: ${adListings}">
+					<td th:text="${adListing.costInCents}">Description</td>
+					<td th:text="${adListing.title}">Ad Title</td>
+					<td th:text="${adListing.userEmail}">User Email</td>
+				</tr>
+			</tbody>
+		</table>
+  </div>
+  <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script th:src="@{/js/table.js}"></script>
+  </div>
+  </body>
+</html>

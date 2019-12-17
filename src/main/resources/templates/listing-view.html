@@ -1,0 +1,36 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}"lang="en">
+<head>
+    <title>AdLister Classifieds - Add a Listing</title>
+</head>
+<body>
+
+<div layout:fragment="content">
+    <div class="container main-content">
+        <h3>Add a Listing</h3>
+        <form method="post" action="#" th:action="${listing != null} ? '/listings/'+${listing.id} : '/listings'" th:object="${adListing}">
+            <div class="form-row">
+                <div class="col">
+                    <input th:id="title" th:name="title" type="text" class="form-control" placeholder="Ad Title" th:value="${listing != null} ? ${listing.title}"/>
+                </div>
+                <div class="col">
+                    <input th:id="costInCents" th:name="costInCents" type="text" class="form-control" placeholder="Cost in Cents" th:value="${listing != null} ? ${listing.costInCents}"/>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col">
+                    <textarea th:id="description" th:name="description" class="form-control" placeholder="Description" th:value="${listing != null} ? ${listing.description}"></textarea>
+                </div>
+            </div>
+            <div class="form-row">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <input th:id="userId" th:name="userId" type="hidden" th:value="${user != null} ? ${user.id}"/>
+            </div>
+        </form>
+        <a th:href="@{/listings}">Return to All Listings</a>
+    </div>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script th:src="@{/js/table.js}"></script>
+</div>
+</body>
+</html>
