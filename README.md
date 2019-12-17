@@ -18,6 +18,7 @@ Once you have created the database with the aforementioned tables, run your MySQ
 ## Authentication
 
 Authentication is not fully implemented yet; however, you may use the following credentials to log into the test site (at http://localhost:8080/login) to view it in its current state:
+
 username | password
 --- | ---
 casey | dontcrackmeplease
