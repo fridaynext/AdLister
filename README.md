@@ -2,6 +2,7 @@
 
 This project displays my ability to learn and deploy Java and Spring in a very short period of time. The purpose of this project is to simulate an online classifieds website, where users can post items and contact other sellers to purchase.
 
+_This project was effectively done over the course of approximately 5 days, which includes learning all the relevant Java / Spring / framework skills necessary to put this project together._
 ## Run Locally
 
 To build this project yourself, you'll need to import the repository into your IDE of choice. Allow Maven to update the project and download all necessary dependencies.
