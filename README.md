@@ -24,12 +24,12 @@ casey | dontcrackmeplease
 
 ## Screenshots
 
-![home page](https://github.com/fridaynext/AdLister/screenshots/01screenshot.jpg)
+![home page](screenshots/01screenshot.jpg)
 
-![login page](https://github.com/fridaynext/AdLister/screenshots/02screenshot.jpg)
+![login page](screenshots/02screenshot.jpg)
 
-![listings page](https://github.com/fridaynext/AdLister/screenshots/03screenshot.jpg)
+![listings page](screenshots/03screenshot.jpg)
 
-![add listing page](https://github.com/fridaynext/AdLister/screenshots/04screenshot.jpg)
+![add listing page](screenshots/04screenshot.jpg)
 
-![logout success](https://github.com/fridaynext/AdLister/screenshots/05screenshot.jpg)
+![logout success](screenshots/05screenshot.jpg)
